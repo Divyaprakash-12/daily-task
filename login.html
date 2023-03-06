@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        #id1 {
+            text-align: center;
+            font-size: small;
+            color: brown;
+            margin-top: 0%;
+        }
+
+        form {
+            margin-right: auto;
+            margin-left: auto;
+            width: 45%;
+            height: 30%;
+            background-color: yellow;
+            color: red;
+        }
+
+        form input {
+            border: 2px;
+            background-color: aliceblue;
+            color: black;
+        }
+    </style>
 </head>
+
 <body>
+   
     <form action="" method="post" name="log">
         <fieldset>
-            <legend>login registration</legend>
-            <lable>user name</lable><br>
-            <input type="text" name="uname" placeholder="enter your name"><br>
-            <lable>password</lable><br>
-            <input type="password" name="pwd" placeholder="enter your password"><br>
-            <lable>confirm password</lable><br>
-            <input type="password" name="cpwd" placeholder="confirm your password"><br><br>
-            <button type="button" name="sign in" onclick="login()">sign in</button>
-            <button type="reset" name="clear">clear</button>
+            <div id="id1">
+                <h2>Login form <i class="fa fa-address-book"></i></h2>
+                <hr>
+            </div>
+            <div>
+                <lable>User name</lable><br>
+                <input type="text" name="uname" placeholder="Enter your name"><br>
+                <lable>Password</lable><br>
+                <input type="password" name="pwd" placeholder="Enter your password"><br>
+                <lable>Confirm password</lable><br>
+                <input type="Password" name="cpwd" placeholder="Confirm your password"><br><br>
+                <button type="button" name="sign in" onclick="login()">Sign in</button>
+                <button type="reset" name="clear">Clear</button>
+            </div>
         </fieldset>
     </form>
     <script src=login.js></script>
 </body>
+
 </html>
