@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class concept</title>
+</head>
+<body>
+    <p id="class"></p>
+    <script>
+        class product{
+            constructor(product_code,product_name,stock){
+                this.product_code=product_code;
+                this.product_name=product_name;
+                this.stock=stock;
+            }
+        }
+        class Activity extends product{
+            constructor(product_code,product_name,stock,customer_name,quantity_sold,total_amount){
+                super(product_code,product_name,stock);
+                this.customer_name=customer_name;
+                this.quantity_sold=quantity_sold;
+                this.total_amount=total_amount;
+            }
+            sales(){
+                document.getElementById("class").innerHTML="<b>product code :</b>"+details.product_code+"<br>"+"<b>product name :</b>"+details.product_name+"<br>"+
+                    "<b>stock value:</b>"+details.stock+"<br>"+"<b>customer name :</b>"+details.customer_name+"<br>"+"<b>quantity sold :</b>"+details.quantity_sold+"<br>"+
+                    "<b>total amount :</b>"+details.total_amount;
+            }
+        }
+        var details=new Activity("10101","marrygold","99","hari","10","1000");
+        details.sales();
+    </script>
+</body>
+</html>

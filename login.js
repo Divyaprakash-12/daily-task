@@ -12,7 +12,7 @@ function login(){
         alert("user name only contain albhabets");
         return false;
     }
-    else if(password==null){
+    else if(password==""){
         alert("enter password");
         return false;
     }
@@ -20,7 +20,7 @@ function login(){
         alert("password contain lowercase,uppercase,number amd special character");
         return false;
     }
-    else if(confirm_password==null){
+    else if(confirm_password==""){
         alert("reenter password");
         return false;
     }
